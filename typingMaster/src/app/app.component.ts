@@ -11,16 +11,14 @@ import { faker } from '@faker-js/faker';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  randomText = faker.lorem.words({ min: 1, max: 1 })
+  randomText = faker.lorem.words({ min: 1, max: 10 })
   enteredText = '';
   inputClassName = 'input is-info';
   timer = 0;
   getEnteredText(e: any) {
     if(e.length == 1){
-
     }
-    
-    this.enteredText = e.target.value;   
+   this.enteredText = e.target.value;   
   }
 
   getClassName(randomLetter: string, enteredLetter: string) {
@@ -30,12 +28,11 @@ export class AppComponent {
     this.inputClassName = randomLetter=== enteredLetter ? "input is-success" : "input is-danger"
     return randomLetter=== enteredLetter ? "has-text-success" : "has-text-danger"
   }
-
   getInputClassName() {
     return this.inputClassName;
   }
-
   toggleModal() {
     this.enteredText = '';
+    window.location.reload();
   }
 }
