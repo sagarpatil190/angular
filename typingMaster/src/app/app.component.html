@@ -1,0 +1,25 @@
+<article class="message">
+  <div class="message-header tex">
+    <p>Typing Master</p>
+   
+  </div>
+  <div class="message-body">
+    <span [className]="getClassName(item, enteredText[i])" *ngFor="let item of randomText.split(''); let i=index">{{item}}</span>
+  </div>
+  <input
+  [className]="getInputClassName()"
+  type="text"
+  placeholder="Type Here..."
+  (input)="getEnteredText($event)"
+  
+/>
+<div id="modal" [className]="(enteredText === randomText)? 'modal is-active' : 'modal'">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    Well done!!!
+    <!-- <h1>Time Taken:41 Seconds</h1> -->
+  </div>
+  <button class="modal-close is-large" aria-label="close" (click)="toggleModal()"></button>
+</div>
+
+</article>
