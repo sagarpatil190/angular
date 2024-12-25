@@ -44,7 +44,7 @@
 angular-password-generator/.editorconfig
 
 angular-password-generator/package-lock.json
-angular-password-generator/.vscode/extensions.json
+angular-password-generator/.vscode/*
 angular-password-generator/.vscode/launch.json
 angular-password-generator/.vscode/tasks.json
 card/.editorconfig
@@ -52,7 +52,6 @@ card/package-lock.json
 card/.vscode/extensions.json
 card/.vscode/launch.json
 card/.vscode/tasks.json
-pipes/src/app/convert.pipe.ts
 typingMaster/.vscode/tasks.json
 typingMaster/.vscode/launch.json
 typingMaster/.vscode/extensions.json
