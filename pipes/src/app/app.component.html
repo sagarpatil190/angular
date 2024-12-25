@@ -1,0 +1,49 @@
+
+  <div class="container text-center">
+    <div class="row">
+      <div><h5>Form Payments</h5></div>
+    </div>
+    <div class="row">
+      <div class="form-group col">
+        <label>Receiver Name</label>
+        <input  class = "form-control" (input)="receiverNameChange($event)"/>
+      </div>
+      <div class="col">
+        <div><b>Receiver Name:</b></div>
+        <div>{{ receiverName | titlecase }}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col">
+        <div>Payment Date</div>
+        <input class = "form-control" type="date" (input)="paymentDateChange($event)"/>
+      </div>
+      <div class="col">
+        <div><b>Payment Date:</b></div>
+        <div>{{ paymentDate | date:'medium'}}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col">
+        <div>Amount</div>
+        <input class = "form-control" (input)="amountChange($event)"/>
+      </div>
+      <div class="col">
+        <div><b>Amount:</b></div>
+        <div>{{ amount | currency: 'INR' : 'symbol-narrow' : '2.2-2'}}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col">
+        <div>Height in foot</div>
+        <input class = "form-control" (input)="heightChange($event)"/>
+      </div>
+      <div class="col">
+        <div><b>Height in CM:</b></div>
+        <div>{{ height | convert }}</div>
+      </div>
+    </div>
+    
+  </div>
+
+      
