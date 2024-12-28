@@ -5,3 +5,5 @@ Important Links
 [https://getbootstrap.com/](https://getbootstrap.com/)
 
 [https://bulma.io/documentation/](https://bulma.io/documentation/)
+
+https://fakerjs.dev/guide/
