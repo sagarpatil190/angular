@@ -85,3 +85,10 @@ typingMaster/.editorconfig
 typingMaster/.vscode/extensions.json
 typingMaster/.vscode/launch.json
 typingMaster/.vscode/tasks.json
+pagination/.vscode/*.json
+pagination/.vscode/extensions.json
+pagination/.vscode/launch.json
+pagination/.vscode/tasks.json
+pagination/package-lock.json
+pagination/.editorconfig
+pagination/.gitignore
